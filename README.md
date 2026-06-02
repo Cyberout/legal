@@ -1,16 +1,22 @@
 # legal
 
-Public legal pages (GitHub Pages). One repo, one folder per app.
+Public legal pages for Play Store (GitHub Pages).
+
+## Structure
+
+```
+site/
+  linstyle/
+  voicepilot/
+```
 
 ## URLs
 
-- LinStyle privacy: https://cyberout.github.io/legal/linstyle/privacy.html
-- LinStyle terms: https://cyberout.github.io/legal/linstyle/terms.html
-- VoicePilot privacy: https://cyberout.github.io/legal/voicepilot/privacy.html
-- VoicePilot terms: https://cyberout.github.io/legal/voicepilot/terms.html
+- https://cyberout.github.io/legal/site/linstyle/privacy.html
+- https://cyberout.github.io/legal/site/linstyle/terms.html
+- https://cyberout.github.io/legal/site/voicepilot/privacy.html
+- https://cyberout.github.io/legal/site/voicepilot/terms.html
 
-## Publish
+## Pages
 
-1. Create **public** repo: `Cyberout/legal`
-2. Push this folder to `main`
-3. Settings → Pages → branch `main`, folder `/ (root)`
+Repo **Settings → Pages** → branch `main`, folder `/ (root)`.
