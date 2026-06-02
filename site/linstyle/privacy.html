@@ -1,60 +1,145 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>LinStyle - Privacy Policy</title>
-  <meta name="description" content="Privacy Policy for the LinStyle app." />
-  <style>
-    :root { color-scheme: light dark; --bg: #0b0b0f; --card: #14141b; --text: #f5f5f7; --muted: #b8b8c3; --accent: #ff2a32; --line: #2b2b35; }
-    @media (prefers-color-scheme: light) {
-      :root { --bg: #f7f7fb; --card: #fff; --text: #121218; --muted: #525265; --accent: #d70f2b; --line: #e5e5ef; }
-    }
-    body { margin: 0; font-family: Inter, Segoe UI, Roboto, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
-    main { max-width: 860px; margin: 0 auto; padding: 32px 16px 64px; }
-    .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 20px; margin-top: 16px; }
-    h1 { font-size: 1.8rem; } h2 { font-size: 1.15rem; } p, li { color: var(--muted); }
-    a { color: var(--accent); }
-    .meta { color: var(--muted); font-size: 0.95rem; }
-  </style>
+  <title>Privacy Policy — LinStyle</title>
+  <meta name="description" content="Privacy Policy for the LinStyle personal style coach app." />
+  <link rel="stylesheet" href="../legal.css" />
+  <style>:root { --accent: #d70f2b; }</style>
 </head>
 <body>
-  <main>
-    <h1>Privacy Policy - LinStyle</h1>
-    <p class="meta">Last updated: 2026-06-02</p>
-    <section class="card">
-      <h2>1. About this policy</h2>
-      <p>This policy explains how LinStyle collects, uses, and protects personal data when you use the app.</p>
-    </section>
-    <section class="card">
-      <h2>2. Data we collect</h2>
-      <ul>
-        <li>App usage data (technical events and stability metrics).</li>
-        <li>Data required to provide premium features, when applicable.</li>
-        <li>Local face analysis data stored on your device by default.</li>
-        <li>Photos for facial style analysis, processed locally unless you use an explicit cloud feature.</li>
-      </ul>
-    </section>
-    <section class="card">
-      <h2>3. How we use data</h2>
-      <ul>
-        <li>To deliver app functionality.</li>
-        <li>To improve performance, quality, and security.</li>
-        <li>To manage subscriptions, purchases, and support.</li>
-      </ul>
-    </section>
-    <section class="card">
-      <h2>4. Data sharing</h2>
-      <p>We do not sell personal data. We may share data with service providers for operations, purchases, and infrastructure only.</p>
-    </section>
-    <section class="card">
-      <h2>5. Your rights</h2>
-      <p>You may export or delete your data in app settings when available, or contact support.</p>
-    </section>
-    <section class="card">
-      <h2>6. Contact</h2>
-      <p><a href="mailto:hello@linstyle.app">hello@linstyle.app</a></p>
-    </section>
-  </main>
+
+  <h1>Privacy Policy — LinStyle</h1>
+  <p class="updated">Last updated: June 2, 2026</p>
+  <p class="subtitle">Thank you for using LinStyle. This Privacy Policy explains how we treat and protect your information when you use the app.</p>
+
+  <hr />
+
+  <h2>📱 1. Information We Collect</h2>
+  <p>LinStyle is a personal style coach app. It analyzes facial structure and photos to suggest hair, beard, glasses, grooming, and style guidance — not medical diagnosis.</p>
+  <p>Depending on how you use the app, we may process:</p>
+  <ul>
+    <li><strong>Face scan data</strong> — photos you capture or select, facial landmarks, proportions, symmetry metrics, and derived style scores (stored locally on your device by default).</li>
+    <li><strong>Style profile and preferences</strong> — onboarding answers, style goals, grooming and wardrobe choices you save in the app.</li>
+    <li><strong>Session and progress data</strong> — analysis history, reports, care routines, and feature usage stored in the local database (SQLite).</li>
+    <li><strong>App settings</strong> — language, theme, and preferences (SharedPreferences).</li>
+    <li><strong>Purchase and subscription status</strong> — handled by Google Play Billing; we do not store full payment card details.</li>
+    <li><strong>Technical data</strong> — when you use online features, limited technical logs may be processed by infrastructure providers (e.g. cloud functions for premium render).</li>
+  </ul>
+  <p><strong>Default (on-device):</strong> face scan measurements and your photo for local structure and honest-read scores stay on your phone unless you explicitly use a cloud feature described below.</p>
+
+  <hr />
+
+  <h2>🎯 2. How We Use Your Information</h2>
+  <p>We use information to:</p>
+  <ul>
+    <li>Run facial structure analysis and style recommendations (hair, beard, skin care, frames).</li>
+    <li>Save and display your analysis history, progress, and style reports.</li>
+    <li>Power optional premium features (e.g. cloud image render, virtual try-on assets).</li>
+    <li>Process subscriptions and restore purchases via Google Play.</li>
+    <li>Improve stability, security, and product quality (analytics events when enabled).</li>
+    <li>Respond to support requests you send us.</li>
+  </ul>
+  <p>We <strong>do not sell</strong> your personal data. We <strong>do not</strong> use your face photos to train third-party AI models.</p>
+
+  <hr />
+
+  <h2>🔔 3. Permissions</h2>
+  <p>The app may request:</p>
+  <ul>
+    <li><code>CAMERA</code> — to capture face photos for scan and analysis (core feature).</li>
+    <li><code>INTERNET</code> — for premium cloud features, billing, and optional online content.</li>
+    <li>Storage / gallery access (when supported by the OS) — to pick an existing photo instead of using the camera.</li>
+  </ul>
+  <p>Permissions are used only for the features you choose. You can revoke them anytime in your device settings.</p>
+
+  <hr />
+
+  <h2>📸 4. Photos, Face Scans, and Analysis Data</h2>
+  <p>When you run a face scan:</p>
+  <ul>
+    <li>Analysis runs on-device using on-phone processing where possible.</li>
+    <li>Results and history are stored locally unless you enable a feature that sends data to the cloud.</li>
+    <li>You can delete local data from in-app settings where available, or by uninstalling the app.</li>
+  </ul>
+  <div class="note">
+    <strong>Premium / cloud features:</strong> If you enable premium render or future cloud analysis, a single photo may be sent per request to configured providers (e.g. image rendering via Firebase Cloud Functions). That transmission is limited to delivering the feature you requested.
+  </div>
+
+  <hr />
+
+  <h2>🛡️ 5. Data Security</h2>
+  <ul>
+    <li>Local data is stored using SQLite and SharedPreferences on your device.</li>
+    <li>Cloud requests, when used, are transmitted over encrypted connections (HTTPS).</li>
+    <li>We do not access your contacts, SMS, or unrelated personal files.</li>
+    <li>No account is required for core local features.</li>
+  </ul>
+  <p>If you lose your device, uninstalling LinStyle removes locally stored app data from that device.</p>
+
+  <hr />
+
+  <h2>🌍 6. International Data Transfers</h2>
+  <p>Core face analysis stays on your device and is not transferred internationally by default.</p>
+  <p>When you use cloud features, your photo or request may be processed on servers operated by our infrastructure providers, which may be located outside your country. Those providers process data only to operate the service, under their own privacy and security terms.</p>
+
+  <hr />
+
+  <h2>👶 7. Children</h2>
+  <p>LinStyle is intended for a general adult audience. We do not knowingly collect personal data from children under 13 (or the minimum age in your region) without parental consent.</p>
+  <p>If you are a parent or guardian and believe a child has provided data through the app, contact us — you may uninstall the app to remove local data or ask us to help with cloud-related requests.</p>
+
+  <hr />
+
+  <h2>📊 8. Analytics and Diagnostics</h2>
+  <p>We may log product analytics events (e.g. feature completion, onboarding) to improve the app. Analytics are designed to avoid unnecessary personal identifiers.</p>
+  <p>When Firebase or similar services are fully enabled, usage may be subject to Google’s policies for those products. We will update this page if our analytics stack changes materially.</p>
+
+  <hr />
+
+  <h2>💰 9. Subscriptions, Purchases, and Ads</h2>
+  <p>Premium features are sold via <strong>Google Play in-app purchases</strong>. Payment processing is handled by Google; see <a href="https://policies.google.com/privacy" rel="noopener">Google’s Privacy Policy</a> for billing data.</p>
+  <p>LinStyle does not display third-party advertising in the current version. If that changes, we will update this policy.</p>
+
+  <hr />
+
+  <h2>🔗 10. Third-Party Services</h2>
+  <p>We may rely on service providers only to operate the app, for example:</p>
+  <ul>
+    <li>Google Play (billing and distribution)</li>
+    <li>Firebase / Google Cloud (optional cloud functions and infrastructure)</li>
+    <li>Font and asset CDNs (non-personal technical requests)</li>
+  </ul>
+  <p>These providers process data according to their own terms and only as needed to deliver the service.</p>
+
+  <hr />
+
+  <h2>✅ 11. Your Rights and Choices</h2>
+  <p>Depending on your region (including GDPR and LGPD where applicable), you may have the right to:</p>
+  <ul>
+    <li>Access, export, or delete data stored in the app (where the feature is available in settings).</li>
+    <li>Withdraw consent for optional cloud features by not using them.</li>
+    <li>Request information or deletion by contacting us at the email below.</li>
+  </ul>
+
+  <hr />
+
+  <h2>⚙️ 12. Changes to This Policy</h2>
+  <p>We may update this Privacy Policy from time to time. The latest version will always be published at this URL with an updated date.</p>
+  <p>We encourage you to review this page periodically.</p>
+
+  <hr />
+
+  <h2>📩 13. Contact</h2>
+  <p>If you have questions or privacy requests:</p>
+  <p>
+    <strong>LinStyle — Privacy Support</strong><br />
+    ✉️ Email: <a href="mailto:hello@linstyle.app">hello@linstyle.app</a><br />
+    📄 Terms: <a href="terms.html">Terms of Use</a>
+  </p>
+
+  <footer>© 2026 LinStyle — All rights reserved.</footer>
+
 </body>
 </html>
